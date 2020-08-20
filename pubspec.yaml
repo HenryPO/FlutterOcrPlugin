@@ -1,19 +1,19 @@
 name: flutter_ocr_plugin
 description: A new flutter plugin project.
-version: 0.0.1
-author: lihy <763454038@qq.com>
-homepage: https://github.com/HenryPO/FlutterOcrPlugin
+version: 1.0.0
+homepage: https://github.com/HenryPO/FlutterOcrPlugin.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.12.0 <2.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  test: ^1.5.1
+  test_coverage: ^0.2.0
 
 flutter:
   plugin:
