@@ -336,11 +336,11 @@ public class FlutterOcrPlugin implements MethodChannel.MethodCallHandler, Flutte
             @Override
             public void onResult(IDCardResult idCardResult) {
                 if (idCardResult != null) {
-                    Log.v("", "idCardResult======>" + idCardResult.toString());
+                    Log.v("", "idCardResult======>" + new Gson().toJson(idCardResult));
                     if (mResult != null) {
                         mOctResult = new OctResult();
                         mOctResult.setFilePath(filePath);
-                        mOctResult.setBody(new Gson().fromJson(idCardResult.toString(), Map.class));
+                        mOctResult.setBody(new Gson().fromJson(new Gson().toJson(idCardResult), Map.class));
                         mResult.success(new Gson().toJson(mOctResult));
                         mResult = null;
                     }
