@@ -19,5 +19,7 @@ A new flutter plugin project.
 
   # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
+  s.vendored_frameworks = 'Framework/**/*.framework'
+  s.dependency 'SVProgressHUD'
   s.swift_version = '5.0'
 end
