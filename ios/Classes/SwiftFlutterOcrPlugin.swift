@@ -5,7 +5,7 @@ import SVProgressHUD
 
 public class SwiftFlutterOcrPlugin: NSObject, FlutterPlugin {
     
-    var viewController: UIViewController?
+    weak var viewController: UIViewController?
     
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "95Flutter/flutter_baidu_ocr", binaryMessenger: registrar.messenger())
